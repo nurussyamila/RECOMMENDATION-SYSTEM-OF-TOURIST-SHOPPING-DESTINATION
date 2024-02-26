@@ -1,0 +1,157 @@
+.picker {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.picker .pc-element,
+.picker .pc-trigger {
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+    border-radius: 2px;
+    word-wrap: break-word;
+    cursor: default;
+    background-color: #ffffff;
+    margin-right: 7px;
+    margin-bottom: 5px;
+    padding: 0 24px 0 6px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.picker .pc-element .pc-close,
+.picker .pc-trigger .pc-close {
+    cursor: pointer;
+    position: relative;
+    background: var(--bs-gray-400);
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin-left: 8px;
+    transition: background .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.picker .pc-element .pc-close:hover,
+.picker .pc-trigger .pc-close:hover {
+    background: var(--bs-danger);
+}
+
+.picker .pc-element .pc-close:after,
+.picker .pc-trigger .pc-close:after {
+    content: '';
+    height: 15px;
+    width: 2px;
+    background: var(--bs-card-bg);
+    position: absolute;
+    border-radius: 8px;
+    transform: rotate(315deg);
+    top: 9px;
+    left: 15px;
+}
+
+.picker .pc-element .pc-close:before,
+.picker .pc-trigger .pc-close:before {
+    content: '';
+    height: 15px;
+    width: 2px;
+    background: var(--bs-card-bg);
+    position: absolute;
+    border-radius: 8px;
+    transform: rotate(45deg);
+    top: 9px;
+    right: 15px;
+}
+
+.picker .pc-trigger:hover {
+    background: var(--bs-gray) !important;
+    color: var(--bs-card-bg);
+}
+
+.picker .pc-element:not(.pc-trigger){
+    background-color: var(--bs-card-bg);
+    border-radius: 20px;
+    border: 1px solid var(--bs-gray-400);
+    padding: 8px 2px 8px 20px;
+}
+
+.picker .pc-select {
+    position: relative;
+    display: inline-block;
+    min-width: 165px;
+    max-width: 200px;
+}
+
+.picker .pc-select .pc-trigger {
+    cursor: pointer;
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 1px solid var(--bs-gray-400);
+    background: var(--bs-light);
+    font-weight: bold;
+    border-radius: 20px;
+    transition: background .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.picker .pc-select .pc-list {
+    position: absolute;
+    text-align: left;
+    left: 0;
+    top: calc(100% - 6px);
+    width: 100%;
+    border: 1px solid var(--bs-gray-300);
+    z-index: 11;
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 0 4px 10px #00000008,0 0 2px #0000000f,0 2px 6px #0000001f!important;
+}
+
+.picker .pc-select .pc-list input[type="search"] {
+    width: 100%;
+    outline: none;
+    color: #2196F3;
+    border: none;
+    position: relative;
+    background-color: #DDDDDD;
+    border-bottom: 2px solid #666;
+    padding-left: 8px;
+}
+
+.picker .pc-select .pc-list ul {
+    margin: 0;
+    padding: 0;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.picker .pc-select .pc-list li {
+    display: block;
+    list-style: none;
+    padding: 8px;
+    cursor: pointer;
+    word-wrap: break-word;
+}
+
+.picker .pc-select .pc-list li:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.picker .pc-select .pc-list li:hover {
+    background-color: #2196F3;
+    color: #ffffff;
+}
+
+.picker .pc-select .pc-list li.not-found {
+    font-style: italic;
+    text-align: center;
+    cursor: default;
+}
+
+.picker .pc-select .pc-list li .searched {
+    font-weight: bold;
+}
