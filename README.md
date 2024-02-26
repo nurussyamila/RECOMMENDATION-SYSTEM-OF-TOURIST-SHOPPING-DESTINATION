@@ -26,6 +26,6 @@ To use the Recommendation System of Tourist Shopping Destinations, follow these 
 PHPMyAdmin: http://localhost/phpmyadmin/index.php?route=/database/structure&db=shoping_recommender
 
 # DATASET
-https://1drv.ms/x/s!AgtQsuuxLhw7gUzz7H-EPsU0QGUm?e=8MhHNT
+CSV file: https://1drv.ms/x/s!AgtQsuuxLhw7gUzz7H-EPsU0QGUm?e=8MhHNT
 
 # GITHUB
